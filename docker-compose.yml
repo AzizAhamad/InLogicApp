@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  inlogicapp.api:
+    image: ${DOCKER_REGISTRY-}inlogicapp
+    build:
+      context: .
+      dockerfile: InLogicApp.API/Dockerfile
